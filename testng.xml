@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<parameter name="url_api" value="https://digitalapi.auspost.com.au"/>
+<parameter name="from_postcode" value="2000"/>
+<parameter name="to_postcode" value="3000"/>
+<parameter name="length" value="11"/>
+<parameter name="width" value="0"/>
+<parameter name="height" value="0"/>
+<parameter name="weight" value="11"/>
+<parameter name="service_code_regular" value="AUS_PARCEL_REGULAR"/>
+<parameter name="service_code_express" value="AUS_PARCEL_EXPRESS"/>
+
+<test thread-count="2" parallel="classes" name="Test">
+<classes>
+<class name="run.test.ui.runTest"/>
+<class name="run.test.api.testAuspostApi"/>
+</classes>
+
+</test> <!-- Test -->
+</suite> <!-- Suite -->

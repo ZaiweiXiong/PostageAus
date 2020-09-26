@@ -1,0 +1,120 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>4/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sat Sep 26 18:20:12 AEST 2020</td>
+</tr>
+<tr><td>Total time:</td><td>18 seconds (18815 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='run.test.ui.runTest.runScenario()'><b>runScenario</b><br>Test class: run.test.ui.runTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Calculate Postage", "Calculate Postage from the Australia post website."<br/>
+<a href="#Output-997728664" onClick='toggleBox("Output-997728664", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-997728664" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-997728664">
+<div "result">user go to Australia Post Calculate postage (PASSED : 2s)</div><br/>
+<div "result">user Enter a source &quot;2151&quot; and destination postcode &quot;2150&quot; and selecting from the dropdown list (PASSED : 1s)</div><br/>
+<div "result">user click on the Go button (PASSED : 0s)</div><br/>
+<div "result">Validate the cost express post and parcel post (PASSED : 0s)</div><br/>
+</div>
+</td>
+<td></td>
+<td>10</td>
+<td>run.test.ui.runTest@6295d394</td></tr>
+<tr>
+<td title='run.test.ui.runTest.runScenario()'><b>runScenario</b><br>Test class: run.test.ui.runTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Calculate Postage with size weight and date", "Calculate Postage from the Australia post website."<br/>
+<a href="#Output-514189472" onClick='toggleBox("Output-514189472", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-514189472" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-514189472">
+<div "result">user go to Australia Post Calculate postage (PASSED : 1s)</div><br/>
+<div "result">user Enter a source &quot;2151&quot; and destination postcode &quot;2150&quot; and selecting from the dropdown list (PASSED : 2s)</div><br/>
+<div "result">user click on the Go button (PASSED : 0s)</div><br/>
+<div "result">user type 10,18,2020-09-27 for calculate postage (PASSED : 1s)</div><br/>
+<div "result">Validate the cost express post and parcel post after setting size and date (PASSED : 0s)</div><br/>
+</div>
+</td>
+<td></td>
+<td>7</td>
+<td>run.test.ui.runTest@6295d394</td></tr>
+<tr>
+<td title='run.test.api.testAuspostApi.test_calculate_total_delivery_price_with_express_api()'><b>test_calculate_total_delivery_price_with_express_api</b><br>Test class: run.test.api.testAuspostApi<br>Parameters: https://digitalapi.auspost.com.au, 2000, 3000, 11, 0, 0, 11, AUS_PARCEL_EXPRESS</td>
+<td></td>
+<td>2</td>
+<td>run.test.api.testAuspostApi@475e586c</td></tr>
+<tr>
+<td title='run.test.api.testAuspostApi.test_calculate_total_delivery_price_with_regual_api()'><b>test_calculate_total_delivery_price_with_regual_api</b><br>Test class: run.test.api.testAuspostApi<br>Parameters: https://digitalapi.auspost.com.au, 2000, 3000, 11, 0, 0, 11, AUS_PARCEL_REGULAR</td>
+<td></td>
+<td>0</td>
+<td>run.test.api.testAuspostApi@475e586c</td></tr>
+</table><p>
+</body>
+</html>
