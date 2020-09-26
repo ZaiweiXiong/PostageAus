@@ -9,7 +9,7 @@ import cucumber.api.CucumberOptions;
 				 tags ={"@post"}
 )
 
-public class runTest extends AbstractTestNGCucumberTests{}
+public class RunTest extends AbstractTestNGCucumberTests{}
 
 
 

@@ -13,7 +13,7 @@ import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import org.testng.Assert;
 
-public class testAuspostApi {
+public class TestAuspostApi {
 	
 	private static RequestSpecification requestSpec;
 	

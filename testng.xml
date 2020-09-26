@@ -13,8 +13,8 @@
 
 <test thread-count="2" parallel="classes" name="Test">
 <classes>
-<class name="run.test.ui.runTest"/>
-<class name="run.test.api.testAuspostApi"/>
+<class name="run.test.ui.RunTest"/>
+<class name="run.test.api.TestAuspostApi"/>
 </classes>
 
 </test> <!-- Test -->
