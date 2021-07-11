@@ -3,13 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="run.test.api.TestAuspostApi">
+      <class name="run.test.api.TestPostageCost">
         <methods>
-          <include name="testApiSetup"/>
-          <include name="test_calculate_total_delivery_price_with_regual_api"/>
-          <include name="test_calculate_total_delivery_price_with_express_api"/>
+          <include name="test_calculate_total_delivery_price"/>
+          <include name="test_postage_and_extra_cover"/>
         </methods>
-      </class> <!-- run.test.api.TestAuspostApi -->
+      </class> <!-- run.test.api.TestPostageCost -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

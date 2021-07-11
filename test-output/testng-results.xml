@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="2" total="5" passed="3">
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="1497" started-at="2021-07-11T10:23:15Z" finished-at="2021-07-11T10:23:17Z">
+  <suite name="Default suite" duration-ms="2422" started-at="2021-07-11T12:02:39Z" finished-at="2021-07-11T12:02:42Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="1497" started-at="2021-07-11T10:23:15Z" finished-at="2021-07-11T10:23:17Z">
+    <test name="Default test" duration-ms="2422" started-at="2021-07-11T12:02:39Z" finished-at="2021-07-11T12:02:42Z">
       <class name="run.test.api.TestPostageCost">
-        <test-method status="PASS" signature="test_calculate_total_delivery_price()[pri:0, instance:run.test.api.TestPostageCost@147a5d08]" name="test_calculate_total_delivery_price" duration-ms="1150" started-at="2021-07-11T20:23:15Z" finished-at="2021-07-11T20:23:16Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_calculate_total_delivery_price -->
-        <test-method status="PASS" signature="test_postage_and_extra_cover()[pri:0, instance:run.test.api.TestPostageCost@147a5d08]" name="test_postage_and_extra_cover" duration-ms="154" started-at="2021-07-11T20:23:16Z" finished-at="2021-07-11T20:23:17Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_postage_and_extra_cover -->
-        <test-method status="PASS" signature="test_retrieve_post_parcel_sizes()[pri:0, instance:run.test.api.TestPostageCost@147a5d08]" name="test_retrieve_post_parcel_sizes" duration-ms="150" started-at="2021-07-11T20:23:17Z" finished-at="2021-07-11T20:23:17Z">
+        <test-method status="PASS" signature="test_retrieve_post_parcel_sizes()[pri:0, instance:run.test.api.TestPostageCost@5d740a0f]" name="test_retrieve_post_parcel_sizes" duration-ms="1913" started-at="2021-07-11T22:02:39Z" finished-at="2021-07-11T22:02:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_retrieve_post_parcel_sizes -->
+        <test-method status="PASS" signature="test_postage_and_extra_cover()[pri:0, instance:run.test.api.TestPostageCost@5d740a0f]" name="test_postage_and_extra_cover" duration-ms="268" started-at="2021-07-11T22:02:41Z" depends-on-methods="run.test.api.TestPostageCost.test_retrieve_post_parcel_sizes" finished-at="2021-07-11T22:02:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_postage_and_extra_cover -->
+        <test-method status="PASS" signature="test_calculate_total_delivery_price()[pri:0, instance:run.test.api.TestPostageCost@5d740a0f]" name="test_calculate_total_delivery_price" duration-ms="186" started-at="2021-07-11T22:02:42Z" depends-on-methods="run.test.api.TestPostageCost.test_postage_and_extra_cover" finished-at="2021-07-11T22:02:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_calculate_total_delivery_price -->
       </class> <!-- run.test.api.TestPostageCost -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
