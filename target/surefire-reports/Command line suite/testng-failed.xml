@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Command line suite]">
+  <test name="Command line test(failed)">
+    <classes>
+      <class name="run.test.ui.RunTest">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="tearDownClass"/>
+        </methods>
+      </class> <!-- run.test.ui.RunTest -->
+      <class name="run.test.api.TestAuspostApi">
+        <methods>
+          <include name="testApiSetup"/>
+          <include name="test_calculate_total_delivery_price_with_regual_api"/>
+          <include name="test_calculate_total_delivery_price_with_express_api"/>
+        </methods>
+      </class> <!-- run.test.api.TestAuspostApi -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [Command line suite] -->

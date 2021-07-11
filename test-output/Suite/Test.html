@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>4/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sat Sep 26 19:42:51 AEST 2020</td>
+<td>Started on:</td><td>Sun Jul 11 14:41:56 AEST 2021</td>
 </tr>
-<tr><td>Total time:</td><td>19 seconds (19510 ms)</td>
+<tr><td>Total time:</td><td>2 seconds (2433 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,54 +67,73 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='run.test.ui.RunTest.runScenario()'><b>runScenario</b><br>Test class: run.test.ui.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Calculate Postage", "Calculate Postage from the Australia post website."<br/>
-<a href="#Output-1960296570" onClick='toggleBox("Output-1960296570", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1960296570" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1960296570">
-<div "result">user go to Australia Post Calculate postage (PASSED : 2s)</div><br/>
-<div "result">user Enter a source &quot;2151&quot; and destination postcode &quot;2150&quot; and selecting from the dropdown list (PASSED : 2s)</div><br/>
-<div "result">user click on the Go button (PASSED : 0s)</div><br/>
-<div "result">Validate the cost express post and parcel post (PASSED : 0s)</div><br/>
-</div>
-</td>
-<td></td>
-<td>10</td>
-<td>run.test.ui.RunTest@6295d394</td></tr>
-<tr>
-<td title='run.test.ui.RunTest.runScenario()'><b>runScenario</b><br>Test class: run.test.ui.RunTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Calculate Postage with size weight and date", "Calculate Postage from the Australia post website."<br/>
-<a href="#Output-775347011" onClick='toggleBox("Output-775347011", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-775347011" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-775347011">
-<div "result">user go to Australia Post Calculate postage (PASSED : 1s)</div><br/>
-<div "result">user Enter a source &quot;2151&quot; and destination postcode &quot;2150&quot; and selecting from the dropdown list (PASSED : 2s)</div><br/>
-<div "result">user click on the Go button (PASSED : 0s)</div><br/>
-<div "result">user type 10,18,2020-09-27 for calculate postage (PASSED : 1s)</div><br/>
-<div "result">Validate the cost express post and parcel post after setting size and date (PASSED : 0s)</div><br/>
-</div>
-</td>
-<td></td>
-<td>7</td>
-<td>run.test.ui.RunTest@6295d394</td></tr>
-<tr>
 <td title='run.test.api.TestAuspostApi.test_calculate_total_delivery_price_with_express_api()'><b>test_calculate_total_delivery_price_with_express_api</b><br>Test class: run.test.api.TestAuspostApi<br>Parameters: https://digitalapi.auspost.com.au, 2000, 3000, 11, 0, 0, 11, AUS_PARCEL_EXPRESS</td>
-<td></td>
-<td>2</td>
-<td>run.test.api.TestAuspostApi@475e586c</td></tr>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at run.test.api.TestAuspostApi.test_calculate_total_delivery_price_with_express_api(TestAuspostApi.java:108)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace829307762", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace829307762'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at run.test.api.TestAuspostApi.test_calculate_total_delivery_price_with_express_api(TestAuspostApi.java:108)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>1</td>
+<td>run.test.api.TestAuspostApi@14a2f921</td></tr>
 <tr>
 <td title='run.test.api.TestAuspostApi.test_calculate_total_delivery_price_with_regual_api()'><b>test_calculate_total_delivery_price_with_regual_api</b><br>Test class: run.test.api.TestAuspostApi<br>Parameters: https://digitalapi.auspost.com.au, 2000, 3000, 11, 0, 0, 11, AUS_PARCEL_REGULAR</td>
-<td></td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at run.test.api.TestAuspostApi.test_calculate_total_delivery_price_with_regual_api(TestAuspostApi.java:68)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace810889043", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace810889043'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at run.test.api.TestAuspostApi.test_calculate_total_delivery_price_with_regual_api(TestAuspostApi.java:68)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
 <td>0</td>
-<td>run.test.api.TestAuspostApi@475e586c</td></tr>
+<td>run.test.api.TestAuspostApi@14a2f921</td></tr>
 </table><p>
 </body>
 </html>

@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="2" ignored="0" total="4" passed="2">
+  <reporter-output>
+    <line>
+      <![CDATA[<div "result">user go to Australia Post Calculate postage (PASSED : 2s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">user Enter a source &quot;2151&quot; and destination postcode &quot;2150&quot; and selecting from the dropdown list (PASSED : 2s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">user click on the Go button (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">Validate the cost express post and parcel post (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">user go to Australia Post Calculate postage (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">user Enter a source &quot;2151&quot; and destination postcode &quot;2150&quot; and selecting from the dropdown list (PASSED : 2s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">user click on the Go button (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">user type 10,18,2020-09-27 for calculate postage (PASSED : 1s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">Validate the cost express post and parcel post after setting size and date (PASSED : 0s)</div>]]>
+    </line>
+  </reporter-output>
+  <suite name="Command line suite" duration-ms="18931" started-at="2020-09-26T09:53:47Z" finished-at="2020-09-26T09:54:06Z">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:run.test.ui.RunTest@9f70c54]" name="runScenario" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+      <group name="API">
+        <method signature="TestAuspostApi.test_calculate_total_delivery_price_with_express_api(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:run.test.api.TestAuspostApi@234bef66]" name="test_calculate_total_delivery_price_with_express_api" class="run.test.api.TestAuspostApi"/>
+        <method signature="TestAuspostApi.test_calculate_total_delivery_price_with_regual_api(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:run.test.api.TestAuspostApi@234bef66]" name="test_calculate_total_delivery_price_with_regual_api" class="run.test.api.TestAuspostApi"/>
+      </group> <!-- API -->
+    </groups>
+    <test name="Command line test" duration-ms="18931" started-at="2020-09-26T09:53:47Z" finished-at="2020-09-26T09:54:06Z">
+      <class name="run.test.api.TestAuspostApi">
+        <test-method status="PASS" signature="testApiSetup()[pri:0, instance:run.test.api.TestAuspostApi@234bef66]" name="testApiSetup" is-config="true" duration-ms="671" started-at="2020-09-26T19:54:05Z" finished-at="2020-09-26T19:54:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testApiSetup -->
+        <test-method status="FAIL" signature="test_calculate_total_delivery_price_with_express_api(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:run.test.api.TestAuspostApi@234bef66]" name="test_calculate_total_delivery_price_with_express_api" duration-ms="0" started-at="2020-09-26T19:54:06Z" finished-at="2020-09-26T19:54:06Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'url_api' is required by @Test on method test_calculate_total_delivery_price_with_express_api but has not been marked @Optional or defined
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'url_api' is required by @Test on method test_calculate_total_delivery_price_with_express_api but has not been marked @Optional or defined
+
+	at org.testng.internal.Parameters.createParameters(Parameters.java:199)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:443)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:568)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1293)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:1020)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1110)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_calculate_total_delivery_price_with_express_api -->
+        <test-method status="FAIL" signature="test_calculate_total_delivery_price_with_regual_api(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:run.test.api.TestAuspostApi@234bef66]" name="test_calculate_total_delivery_price_with_regual_api" duration-ms="0" started-at="2020-09-26T19:54:06Z" finished-at="2020-09-26T19:54:06Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'url_api' is required by @Test on method test_calculate_total_delivery_price_with_regual_api but has not been marked @Optional or defined
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'url_api' is required by @Test on method test_calculate_total_delivery_price_with_regual_api but has not been marked @Optional or defined
+
+	at org.testng.internal.Parameters.createParameters(Parameters.java:199)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:443)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:568)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1293)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:1020)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1110)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_calculate_total_delivery_price_with_regual_api -->
+      </class> <!-- run.test.api.TestAuspostApi -->
+      <class name="run.test.ui.RunTest">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:run.test.ui.RunTest@9f70c54]" name="setUpClass" is-config="true" duration-ms="333" started-at="2020-09-26T19:53:47Z" finished-at="2020-09-26T19:53:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:run.test.ui.RunTest@9f70c54]" name="runScenario" duration-ms="10064" started-at="2020-09-26T19:53:48Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-09-26T19:53:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Calculate Postage"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Calculate Postage from the Australia post website."]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<div "result">user go to Australia Post Calculate postage (PASSED : 2s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">user Enter a source &quot;2151&quot; and destination postcode &quot;2150&quot; and selecting from the dropdown list (PASSED : 2s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">user click on the Go button (PASSED : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">Validate the cost express post and parcel post (PASSED : 0s)</div>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:run.test.ui.RunTest@9f70c54]" name="runScenario" duration-ms="7798" started-at="2020-09-26T19:53:58Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-09-26T19:54:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Calculate Postage with size weight and date"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Calculate Postage from the Australia post website."]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<div "result">user go to Australia Post Calculate postage (PASSED : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">user Enter a source &quot;2151&quot; and destination postcode &quot;2150&quot; and selecting from the dropdown list (PASSED : 2s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">user click on the Go button (PASSED : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">user type 10,18,2020-09-27 for calculate postage (PASSED : 1s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">Validate the cost express post and parcel post after setting size and date (PASSED : 0s)</div>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:run.test.ui.RunTest@9f70c54]" name="tearDownClass" is-config="true" duration-ms="4" started-at="2020-09-26T19:54:05Z" finished-at="2020-09-26T19:54:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- run.test.ui.RunTest -->
+    </test> <!-- Command line test -->
+  </suite> <!-- Command line suite -->
+</testng-results>
